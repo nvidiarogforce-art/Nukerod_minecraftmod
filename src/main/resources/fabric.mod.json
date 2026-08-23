@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "nukerod",
+  "version": "${version}",
+  "name": "Nuke Fishing Rod",
+  "description": "Adds the Nuke Rod: a fishing rod that calls down a custom miniature nuclear strike where the hook lands.",
+  "authors": [
+    "Nizomiddin"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/nukerod-beta",
+    "sources": "https://github.com/nvidiarogforce-art/Nukerod_minecraftmod",
+    "issues": "https://github.com/nvidiarogforce-art/Nukerod_minecraftmod/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/nukerod/textures/item/nuke_rod.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.nukerod.NukeRodMod"
+    ],
+    "client": [
+      "com.example.nukerod.NukeRodClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "nukerod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.10",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {}
+}
