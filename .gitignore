@@ -1,0 +1,29 @@
+# Gradle
+.gradle/
+build/
+out/
+
+# Minecraft/Fabric development runtime
+run/
+runs/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs / crash reports
+*.log
+crash-reports/
+
+# Local config / secrets
+.env
+.env.*
+!.env.example
